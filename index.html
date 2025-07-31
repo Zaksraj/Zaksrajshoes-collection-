@@ -1,33 +1,99 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html>
   <head>
     <title>Zaksraj Shoe Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body { font-family: Arial; margin: 20px; background: #f5f5f5; }
-      h1 { text-align: center; }
-      .product { border: 1px solid #ccc; border-radius: 8px; padding: 10px; margin: 10px; background: white; }
-      .product img { width: 100%; height: auto; border-radius: 6px; }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+      }
+      h1 {
+        background: #222;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      .product {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        padding-bottom: 15px;
+      }
+      .product img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .product h2 {
+        padding: 10px;
+        font-size: 18px;
+      }
+      .product p {
+        padding: 0 10px;
+        font-size: 14px;
+        color: #666;
+      }
+      .price {
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #008000;
+      }
+      .btn {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 15px;
+        background: #25d366;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        width: 80%;
+      }
     </style>
   </head>
   <body>
-    <h1>Welcome to Zaksraj Shoe Store</h1>
+    <h1>Zaksraj Shoe Collection</h1>
+    <div class="container"><!-- Leather Shoe -->
+  <div class="product">
+    <img src="https://i.postimg.cc/gk0MrB4g/Screenshot-20250716-133958-1.jpg" alt="Leather Shoe">
+    <h2>Leather Shoe</h2>
+    <p>Durable and stylish men's leather shoe.</p>
+    <div class="price">₦6,500</div>
+    <a class="btn" href="https://wa.me/2348100000000?text=I%20want%20to%20order%20Leather%20Shoe">Order on WhatsApp</a>
+  </div>
 
-    <div class="product">
-      <img src="https://i.postimg.cc/gk0MrB4g/Screenshot-20250716-133958-1.jpg" alt="Leather Shoe">
-      <h2>Leather Shoe</h2>
-      <p>Price: $7</p>
-    </div>
+  <!-- Women's Shoe -->
+  <div class="product">
+    <img src="https://i.postimg.cc/x1ZjB7ph/Screenshot-20250731-232251-2.png" alt="Women's Beautiful Shoe">
+    <h2>Women's Beautiful Shoe</h2>
+    <p>Elegant and comfortable women's shoe.</p>
+    <div class="price">₦7,000</div>
+    <a class="btn" href="https://wa.me/2348100000000?text=I%20want%20to%20order%20Women's%20Beautiful%20Shoe">Order on WhatsApp</a>
+  </div>
 
-    <div class="product">
-      <img src="https://i.postimg.cc/gk0MrB4g/Screenshot-20250716-133958-1.jpg" alt="Women's Beautiful Shoe">
-      <h2>Women's Beautiful Shoe</h2>
-      <p>Price: $7</p>
-    </div>
+  <!-- Sneakers -->
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1593032465171-8aa5dc63bbd5?auto=format&fit=crop&w=400&q=80" alt="Men's Sneakers">
+    <h2>Men's Sneakers</h2>
+    <p>Comfortable everyday sneakers for men.</p>
+    <div class="price">₦5,500</div>
+    <a class="btn" href="https://wa.me/2348100000000?text=I%20want%20to%20order%20Men's%20Sneakers">Order on WhatsApp</a>
+  </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1593032465171-8aa5dc63bbd5?auto=format&fit=crop&w=400&q=80" alt="Sneakers">
-      <h2>Men's Sneakers</h2>
-      <p>Price: $6</p>
-    </div>
+</div>
+
   </body>
 </html>
+      
